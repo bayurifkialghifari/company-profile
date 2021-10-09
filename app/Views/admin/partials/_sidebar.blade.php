@@ -2,6 +2,7 @@
     
     use App\Core\Request;
 
+    $navigation = (isset($navigation)) ? $navigation : [];
 @endphp
 <aside class="left-side sidebar-offcanvas">
     <!-- sidebar: style can be found in sidebar-->
@@ -20,32 +21,41 @@
                 </div>
             </div>
             <ul class="navigation">
-                <li>
+                <li class="{{ $navigation[0] == 'Dashboard' ? 'active' : '' }}">
                     <a href="{{ base_url }}admin/dashboard">
                         <i class="menu-icon ti-layout-list-large-image"></i>
                         <span class="mm-text">Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="{{ base_url }}admin/website">
-                        <i class="menu-icon ti-tag"></i>
-                        <span>Website</span>
-                        <span class="fa tag"></span>
+                <li class="menu-dropdown {{ $navigation[0] == 'Pengaturan' ? 'active' : '' }}">
+                    <a href="javascript:void(0)">
+                        <i class="menu-icon ti-settings"></i>
+                        <span>Pengaturan</span>
+                        <span class="fa arrow"></span>
                     </a>
-                </li>
-                <li>
-                    <a href="{{ base_url }}admin/pages">
-                        <i class="menu-icon ti-link"></i>
-                        <span>Halaman</span>
-                        <span class="fa tag"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ base_url }}admin/metas">
-                        <i class="menu-icon ti-book"></i>
-                        <span>Meta</span>
-                        <span class="fa tag"></span>
-                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="{{ base_url }}admin/website">
+                                <i class="menu-icon ti-tag"></i>
+                                <span>Website</span>
+                                <span class="fa tag"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ base_url }}admin/pages">
+                                <i class="menu-icon ti-link"></i>
+                                <span>Halaman</span>
+                                <span class="fa tag"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ base_url }}admin/metas">
+                                <i class="menu-icon ti-book"></i>
+                                <span>Meta</span>
+                                <span class="fa tag"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <!-- / .navigation -->

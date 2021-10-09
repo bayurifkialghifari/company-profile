@@ -14,13 +14,11 @@
                         <table class="table table-striped table-bordered" id="table-responsive">
                             <thead>
                                 <tr>
+                                    <th>Halaman</th>
                                     <th>Nama</th>
-                                    <th>URL</th>
-                                    <th>Controller</th>
-                                    <th>Function</th>
-                                    <th>Method</th>
+                                    <th>Content</th>
                                     <th>Deskripsi</th>
-                                    <th>Visit</th>
+                                    <th>Status</th>
                                     <th>Dibuat pada</th>
                                     <th>Action</th>
                                 </tr>
@@ -28,16 +26,14 @@
                             <tbody>
                                 @foreach($data as $d)
                                     <tr>
+                                        <td>{{ $d['page'] }}</td>
                                         <td>{{ $d['nama'] }}</td>
-                                        <td>{{ $d['url'] }}</td>
-                                        <td>{{ $d['controller'] }}</td>
-                                        <td>{{ $d['function'] }}</td>
-                                        <td>{{ $d['method'] }}</td>
+                                        <td>{{ $d['content'] }}</td>
                                         <td>{{ $d['deskripsi'] }}</td>
-                                        <td>{{ $d['visit'] }}</td>
+                                        <td>{{ $d['status'] }}</td>
                                         <td>{{ $d['created_at'] }}</td>
                                         <td>
-                                            <button onclick="update(`{{ $d['id'] }}|{{ $d['nama'] }}|{{ $d['url'] }}|{{ $d['controller'] }}|{{ $d['function'] }}|{{ $d['method'] }}|{{ $d['deskripsi'] }}|{{ $d['visit'] }}`)" class="btn btn-primary" data-toggle="modal" data-target="#modal"><i class="menu-icon ti-pencil"></i> Ubah</button>
+                                            <button onclick="update(`{{ $d['id'] }}|{{ $d['page_id'] }}|{{ $d['nama'] }}|{{ $d['content'] }}|{{ $d['deskripsi'] }}|{{ $d['status'] }}`)" class="btn btn-primary" data-toggle="modal" data-target="#modal"><i class="menu-icon ti-pencil"></i> Ubah</button>
                                             <button onclick="deletes({{ $d['id'] }})" class="btn btn-danger"><i class="menu-icon ti-trash"></i> Hapus</button>
                                         </td>
                                     </tr>
@@ -62,38 +58,41 @@
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-sm-11">
+                                    <label for="halaman" class="control-label">Halaman</label>
+                                    <select class="form-control" id="halaman" name="page_id" required>
+                                        <option value="">--Pilih Halaman--</option>
+                                        @foreach($pages as $p)
+                                            <option value="{{ $p['id'] }}">{{ $p['nama'] }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-11">
                                     <label for="nama" class="control-label">Nama</label>
                                     <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-11">
-                                    <label for="url" class="control-label">URL</label>
-                                    <input type="text" class="form-control" id="url" name="url" placeholder="URL" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-11">
-                                    <label for="controller" class="control-label">Controller</label>
-                                    <input type="text" class="form-control" id="controller" name="controller" placeholder="Controller" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-11">
-                                    <label for="function" class="control-label">Function</label>
-                                    <input type="text" class="form-control" id="function" name="function" placeholder="Function" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-11">
-                                    <label for="method" class="control-label">Method</label>
-                                    <input type="text" class="form-control" id="method" name="method" placeholder="Method" required>
+                                    <label for="content" class="control-label">Content</label>
+                                    <input type="text" class="form-control" id="content" name="content" placeholder="Content" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-11">
                                     <label for="deskripsi" class="control-label">Deskripsi</label>
                                     <textarea id="deskripsi" class="form-control" name="deskripsi" placeholder="Deskripsi"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-11">
+                                    <label for="status" class="control-label">Status</label>
+                                    <select class="form-control" id="status" name="status" required>
+                                        <option value="">--Pilih Status--</option>
+                                        <option value="1">Aktif</option>
+                                        <option value="0">Tidak Aktif</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +109,7 @@
     <script type="text/javascript">
         $type = 'ADD'
         $table = $('#table-responsive').DataTable()
-        $table.columns(7)
+        $table.columns(3)
         .order('asc')
         .draw()
 
@@ -118,12 +117,11 @@
         {
             $type = 'ADD'
             $('#modal-title').html('Tambah Data')
+            $('#halaman').val('')
             $('#nama').val('')
-            $('#url').val('/')
-            $('#controller').val('\\')
-            $('#function').val('index')
-            $('#method').val('get')
-            $('#deskripsi').val('-')
+            $('#content').val('')
+            $('#deskripsi').val('')
+            $('#status').val('')
         }
 
         function update(val)
@@ -133,12 +131,11 @@
 
             $('#modal-title').html('Ubah Data')
             $('#id').val(val[0])
-            $('#nama').val(val[1])
-            $('#url').val(val[2])
-            $('#controller').val(val[3])
-            $('#function').val(val[4])
-            $('#method').val(val[5])
-            $('#deskripsi').val(val[6])
+            $('#halaman').val(val[1])
+            $('#nama').val(val[2])
+            $('#content').val(val[3])
+            $('#deskripsi').val(val[4])
+            $('#status').val(val[5])
         }
 
         function deletes(val)
@@ -157,7 +154,7 @@
             }).then(function () {
                 $.ajax({
                     method: 'delete',
-                    url: `{{ base_url }}admin/pages/delete`,
+                    url: `{{ base_url }}admin/metas/delete`,
                     data: {
                         id: val,
                     },
@@ -202,7 +199,7 @@
             }
 
             $.ajax({
-                url: `{{ base_url }}admin/pages/${url}`,
+                url: `{{ base_url }}admin/metas/${url}`,
                 method: method,
                 data: data,
                 success(data)

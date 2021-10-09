@@ -17,6 +17,7 @@
 			view('admin/page/website/index', [
 				'title' => 'Website',
 				'data' => $data,
+				'navigation' => ['Pengaturan'],
 				'breadcrumb_1' => 'Dashboard',
 				'breadcrumb_2' => 'Website',
 				'breadcrumb_1_url' => base_url . 'admin/dashboard',

@@ -13,6 +13,7 @@
 			
 			view('admin/page/dashboard', [
 				'title' => 'Dashboard',
+				'navigation' => ['Dashboard'],
 				'breadcrumb_1' => 'Dashboard',
 				'breadcrumb_1_url' => '#',
 			]);

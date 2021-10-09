@@ -4,22 +4,27 @@
 
 	use App\Core\Controller;
 	use App\Liblaries\Sesion;
+	use App\Models\Meta_datas;
 	use App\Models\Pages;
 
-	Class Page extends Controller
+	Class Meta extends Controller
 	{
 		public function index()
 		{
 			Sesion::cekBelum();
 
-			$data = Pages::all();
+			$data = (new Meta_datas)->select('meta_datas.*, pages.nama as page')
+			->leftJoin('pages', 'meta_datas.page_id', 'pages.id')
+			->get();
+			$pages = Pages::all();
 			
-			view('admin/page/pages/index', [
-				'title' => 'Halaman',
+			view('admin/page/metas/index', [
+				'title' => 'Meta data',
 				'data' => $data,
+				'pages' => $pages,
 				'navigation' => ['Pengaturan'],
 				'breadcrumb_1' => 'Dashboard',
-				'breadcrumb_2' => 'Halaman',
+				'breadcrumb_2' => 'Meta',
 				'breadcrumb_1_url' => base_url . 'admin/dashboard',
 				'breadcrumb_2_url' => '#',
 			]);
@@ -29,7 +34,7 @@
 		{
 			$data = parent::all();
 
-			$exe = Pages::create($data);
+			$exe = Meta_datas::create($data);
 
 			echo json_encode($data);
 		}
@@ -38,7 +43,7 @@
 		{
 			$data = parent::all();
 
-			$exe = Pages::update(['id' => $data['id']], $data);
+			$exe = Meta_datas::update(['id' => $data['id']], $data);
 
 			echo json_encode($exe);
 		}
@@ -47,7 +52,7 @@
 		{
 			$data = parent::all();
 
-			$exe = Pages::delete(['id' => $data['id']]);
+			$exe = Meta_datas::delete(['id' => $data['id']]);
 
 			echo json_encode($exe);
 		}
