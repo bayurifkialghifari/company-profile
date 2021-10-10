@@ -16,7 +16,7 @@
                                 <tr>
                                     <th>Halaman</th>
                                     <th>Nama</th>
-                                    <th>Content</th>
+                                    <th>Foto</th>
                                     <th>Deskripsi</th>
                                     <th>Status</th>
                                     <th>Dibuat pada</th>
@@ -28,12 +28,12 @@
                                     <tr>
                                         <td>{{ $d['page'] }}</td>
                                         <td>{{ $d['nama'] }}</td>
-                                        <td>{{ $d['content'] }}</td>
+                                        <td>{{ $d['foto'] }}</td>
                                         <td>{{ $d['deskripsi'] }}</td>
                                         <td>{{ $d['status'] }}</td>
                                         <td>{{ $d['created_at'] }}</td>
                                         <td>
-                                            <button onclick="update(`{{ $d['id'] }}|{{ $d['page_id'] }}|{{ $d['nama'] }}|{{ $d['content'] }}|{{ $d['deskripsi'] }}|{{ $d['status'] }}`)" class="btn btn-primary" data-toggle="modal" data-target="#modal"><i class="menu-icon ti-pencil"></i> Ubah</button>
+                                            <button onclick="update(`{{ $d['id'] }}|{{ $d['page_id'] }}|{{ $d['nama'] }}|{{ $d['foto'] }}|{{ $d['deskripsi'] }}|{{ $d['status'] }}`)" class="btn btn-primary" data-toggle="modal" data-target="#modal"><i class="menu-icon ti-pencil"></i> Ubah</button>
                                             <button onclick="deletes({{ $d['id'] }})" class="btn btn-danger"><i class="menu-icon ti-trash"></i> Hapus</button>
                                         </td>
                                     </tr>
@@ -75,8 +75,13 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-11">
-                                    <label for="content" class="control-label">Content</label>
-                                    <input type="text" class="form-control" id="content" name="content" placeholder="Content" required>
+                                    <label for="foto" class="control-label">Foto</label>
+                                    <input type="file" accept="image/*" class="form-control" id="foto" name="foto" placeholder="Foto">
+                                    <div class="form-group">
+                                        <label for="tanggal">Preview Image</label>
+                                        <br>
+                                        <img src="" id="image-preview" width="50%"> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -113,13 +118,29 @@
         .order('asc')
         .draw()
 
+        function readURL(input, id)
+        {
+            if (input.files && input.files[0]) 
+            {
+            
+                let reader = new FileReader()
+
+                reader.onload = function (e) 
+                {
+                    $(`#${id}`).attr('src', e.target.result)
+                }
+
+                reader.readAsDataURL(input.files[0])
+            }
+        }
+
         function add()
         {
             $type = 'ADD'
             $('#modal-title').html('Tambah Data')
             $('#halaman').val('')
             $('#nama').val('')
-            $('#content').val('')
+            $('#image-preview').attr('src', '')
             $('#deskripsi').val('')
             $('#status').val('')
         }
@@ -133,7 +154,7 @@
             $('#id').val(val[0])
             $('#halaman').val(val[1])
             $('#nama').val(val[2])
-            $('#content').val(val[3])
+            $('#image-preview').attr('src', `{{ base_url }}banners/${val[3]}`)
             $('#deskripsi').val(val[4])
             $('#status').val(val[5])
         }
@@ -154,7 +175,7 @@
             }).then(function () {
                 $.ajax({
                     method: 'delete',
-                    url: `{{ base_url }}admin/metas/delete`,
+                    url: `{{ base_url }}admin/banner/delete`,
                     data: {
                         id: val,
                     },
@@ -173,23 +194,28 @@
             }, function (dismiss) {})
         }
 
+        $("#foto").change(function () {
+            readURL(this, 'image-preview')
+        })
+
         $('#form').submit(ev =>
         {
             ev.preventDefault()
 
-            let data = $('#form').serialize()
+            let data = new FormData($('#form')[0])
             let url = ''
             let method = ''
             let message = ''
+            let foto = $('#foto')[0].files[0]
 
             if($type == 'ADD')
             {
                 url = 'create'
                 method = 'post'
                 message = 'Data berhasil dibuat !'
-                data = data.split('&')
-                data.splice(0, 1)
-                data = data.join('&')
+                // data = data.split('&')
+                // data.splice(0, 1)
+                // data = data.join('&')
             }
             else
             {
@@ -198,10 +224,16 @@
                 message = 'Data berhasil diubah !'
             }
 
+            console.log(data)
+
             $.ajax({
-                url: `{{ base_url }}admin/metas/${url}`,
+                url: `{{ base_url }}admin/banner/${url}`,
                 method: method,
                 data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                async: false,
                 success(data)
                 {
                     swal({

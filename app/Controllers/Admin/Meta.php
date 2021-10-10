@@ -24,9 +24,11 @@
 				'pages' => $pages,
 				'navigation' => ['Pengaturan'],
 				'breadcrumb_1' => 'Dashboard',
+				'breadcrumb_3' => 'Pengaturan',
 				'breadcrumb_2' => 'Meta',
 				'breadcrumb_1_url' => base_url . 'admin/dashboard',
 				'breadcrumb_2_url' => '#',
+				'breadcrumb_3_url' => '#',
 			]);
 		}
 
@@ -36,7 +38,7 @@
 
 			$exe = Meta_datas::create($data);
 
-			echo json_encode($data);
+			echo json_encode($exe);
 		}
 
 		public function update()

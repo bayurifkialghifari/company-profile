@@ -2,6 +2,7 @@
     
     use App\Core\Request;
     use App\Models\Websites;
+    use App\Models\Banners;
 
     $websites = Websites::all();
     $webs = [];
@@ -15,6 +16,11 @@
     		$logo_desc = $r['deskripsi'];
     	}
     }
+
+    $banner = (new Banners)->select('banners.*, pages.nama as page')
+	->leftJoin('pages', 'banners.page_id', 'pages.id')
+	->where('pages.nama', $class)
+	->get();
 @endphp
 
 <!DOCTYPE html>
@@ -84,26 +90,26 @@
 				</div>
 			</div> <!-- .site-header -->
 
+			@if($banner->num_rows > 0)
 			<div class="hero hero-slider">
 				<ul class="slides">
-					<li data-bg-image="dummy/slide-1.jpg">
-						<div class="container">
-							<div class="slide-title">
-								<span>blanditiis deleniti</span> <br>
-								<span>ducimus deleniti atque</span>
+					@foreach($banner as $banner)
+						<li data-bg-image="{{ base_url }}banners/{{ $banner['foto'] }}">
+							<div class="container">
+								<div class="slide-title">
+									@if($banner['nama'] != '' || $banner['nama'] != '-')
+										<span>{{ $banner['nama'] }}</span> <br>
+									@endif
+									@if($banner['deskripsi'] != '' || $banner['deskripsi'] != '-')
+										<span>{{ $banner['deskripsi'] }}</span>
+									@endif
+								</div>
 							</div>
-						</div>
-					</li>
-					<li data-bg-image="dummy/slide-2.jpg">
-						<div class="container">
-							<div class="slide-title">
-								<span>blanditiis deleniti</span> <br>
-								<span>ducimus deleniti atque</span>
-							</div>
-						</div>
-					</li>
+						</li>
+					@endforeach
 				</ul> <!-- .slides -->
 			</div> <!-- .hero-slider -->
+			@endif
 
 			<main class="main-content">
 				@yield('content')

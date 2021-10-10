@@ -27,6 +27,24 @@
                         <span class="mm-text">Dashboard</span>
                     </a>
                 </li>
+                <li class="{{ $navigation[0] == 'Banner' ? 'active' : '' }}">
+                    <a href="{{ base_url }}admin/banner">
+                        <i class="menu-icon ti-layout-list-large-image"></i>
+                        <span class="mm-text">Banner</span>
+                    </a>
+                </li>
+                <li class="{{ $navigation[0] == 'Testimonial' ? 'active' : '' }}">
+                    <a href="{{ base_url }}admin/testimonial">
+                        <i class="menu-icon ti-layout-list-large-image"></i>
+                        <span class="mm-text">Testimonial</span>
+                    </a>
+                </li>
+                <li class="{{ $navigation[0] == 'Portofolio' ? 'active' : '' }}">
+                    <a href="{{ base_url }}admin/portofolio">
+                        <i class="menu-icon ti-layout-list-large-image"></i>
+                        <span class="mm-text">Portofolio</span>
+                    </a>
+                </li>
                 <li class="menu-dropdown {{ $navigation[0] == 'Pengaturan' ? 'active' : '' }}">
                     <a href="javascript:void(0)">
                         <i class="menu-icon ti-settings"></i>

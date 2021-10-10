@@ -8,6 +8,9 @@
 	{
 		public function index()
 		{
-			view('page/about');
+			view('page/about', [
+				'title' => 'About us',
+				'class' => explode('\\', get_called_class())[2],
+			]);
 		}
 	}

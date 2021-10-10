@@ -19,9 +19,11 @@
 				'data' => $data,
 				'navigation' => ['Pengaturan'],
 				'breadcrumb_1' => 'Dashboard',
-				'breadcrumb_2' => 'Website',
+				'breadcrumb_2' => 'Pengaturan',
+				'breadcrumb_3' => 'Website',
 				'breadcrumb_1_url' => base_url . 'admin/dashboard',
 				'breadcrumb_2_url' => '#',
+				'breadcrumb_3_url' => '#',
 			]);
 		}
 
@@ -31,7 +33,7 @@
 
 			$exe = Websites::create($data);
 
-			echo json_encode($data);
+			echo json_encode($exe);
 		}
 
 		public function update()

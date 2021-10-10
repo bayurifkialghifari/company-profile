@@ -23,6 +23,11 @@
 
 		// Dashboard
 		$app->add('/admin/dashboard', '\Admin\Dashboard');
+		// Banner
+		$app->add('/admin/banner', '\Admin\Banner');
+		$app->add('/admin/banner/create', '\Admin\Banner', 'create', 'post');
+		$app->add('/admin/banner/update', '\Admin\Banner', 'update', 'put');
+		$app->add('/admin/banner/delete', '\Admin\Banner', 'destroy', 'delete');
 		// Website
 		$app->add('/admin/website', '\Admin\Website');
 		$app->add('/admin/website/create', '\Admin\Website', 'create', 'post');
