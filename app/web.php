@@ -26,8 +26,26 @@
 		// Banner
 		$app->add('/admin/banner', '\Admin\Banner');
 		$app->add('/admin/banner/create', '\Admin\Banner', 'create', 'post');
-		$app->add('/admin/banner/update', '\Admin\Banner', 'update', 'put');
+		$app->add('/admin/banner/update', '\Admin\Banner', 'update', 'post');
 		$app->add('/admin/banner/delete', '\Admin\Banner', 'destroy', 'delete');
+		// Article
+		$app->add('/admin/article', '\Admin\Article');
+		$app->add('/admin/article/get', '\Admin\Article', 'gets', 'post');
+		$app->add('/admin/article/add', '\Admin\Article', 'add');
+		$app->add('/admin/article/edit', '\Admin\Article', 'edit');
+		$app->add('/admin/article/create', '\Admin\Article', 'create', 'post');
+		$app->add('/admin/article/update', '\Admin\Article', 'update', 'post');
+		$app->add('/admin/article/delete', '\Admin\Article', 'destroy', 'delete');
+		// Testimonial
+		$app->add('/admin/testimonial', '\Admin\Testimonial');
+		$app->add('/admin/testimonial/create', '\Admin\Testimonial', 'create', 'post');
+		$app->add('/admin/testimonial/update', '\Admin\Testimonial', 'update', 'post');
+		$app->add('/admin/testimonial/delete', '\Admin\Testimonial', 'destroy', 'delete');
+		// Portofolio
+		$app->add('/admin/portofolio', '\Admin\Portofolio');
+		$app->add('/admin/portofolio/create', '\Admin\Portofolio', 'create', 'post');
+		$app->add('/admin/portofolio/update', '\Admin\Portofolio', 'update', 'post');
+		$app->add('/admin/portofolio/delete', '\Admin\Portofolio', 'destroy', 'delete');
 		// Website
 		$app->add('/admin/website', '\Admin\Website');
 		$app->add('/admin/website/create', '\Admin\Website', 'create', 'post');

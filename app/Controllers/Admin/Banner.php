@@ -20,7 +20,7 @@
 			$pages = Pages::all();
 			
 			view('admin/page/banners/index', [
-				'title' => 'Halaman',
+				'title' => 'Banner',
 				'data' => $data,
 				'pages' => $pages,
 				'navigation' => ['Banner'],
@@ -48,7 +48,7 @@
 
 		public function update()
 		{
-			$data = parent::all();
+			$data = parent::post_all();
 
 			// Upload
 			if(isset($_FILES['foto']))

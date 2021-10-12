@@ -76,7 +76,7 @@
                             <div class="form-group">
                                 <div class="col-sm-11">
                                     <label for="foto" class="control-label">Foto</label>
-                                    <input type="file" accept="image/*" class="form-control" id="foto" name="foto" placeholder="Foto">
+                                    <input type="file" accept="image/*" class="form-control" id="foto" placeholder="Foto">
                                     <div class="form-group">
                                         <label for="tanggal">Preview Image</label>
                                         <br>
@@ -220,11 +220,15 @@
             else
             {
                 url = 'update'
-                method = 'put'
+                method = 'post'
                 message = 'Data berhasil diubah !'
             }
 
-            console.log(data)
+            if(foto !== undefined)
+            {
+                data.append('foto', foto)
+            }
+
 
             $.ajax({
                 url: `{{ base_url }}admin/banner/${url}`,

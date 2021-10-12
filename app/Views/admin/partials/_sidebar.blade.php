@@ -45,6 +45,12 @@
                         <span class="mm-text">Portofolio</span>
                     </a>
                 </li>
+                <li class="{{ $navigation[0] == 'Artikel' ? 'active' : '' }}">
+                    <a href="{{ base_url }}admin/article">
+                        <i class="menu-icon ti-layout-list-large-image"></i>
+                        <span class="mm-text">Artikel</span>
+                    </a>
+                </li>
                 <li class="menu-dropdown {{ $navigation[0] == 'Pengaturan' ? 'active' : '' }}">
                     <a href="javascript:void(0)">
                         <i class="menu-icon ti-settings"></i>
