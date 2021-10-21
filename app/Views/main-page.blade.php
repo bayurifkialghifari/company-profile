@@ -76,7 +76,7 @@
 			<div class="site-header">
 				<div class="container">
 					<a href="#" id="branding">
-						<img src="{{ base_url }}assets/images/{{ $webs['website_logo'] }}" alt="{{ $logo_desc }}" width="185px" height="165px" class="logo" style="margin-top: -40px;margin-bottom: -50px">
+						<img src="{{ base_url }}assets/images/{{ $webs['website_logo'] }}" alt="{{ $logo_desc }}" width="185px" height="165px" class="logo" style="margin-top: -20px;margin-bottom: -50px">
 					</a> <!-- #branding -->
 
 					<!-- Default snippet for navigation -->

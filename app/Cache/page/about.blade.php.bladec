@@ -2,16 +2,52 @@
 <?php $this->startSection('content'); ?>
 	<div class="page">
  <div class="container">
- <h2 class="entry-title">Lorem ipsum dolor sit amet adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</h2>
+ <h2 class="entry-title">About Us</h2>
  
- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure.</p>
+ <p><i>“Menghadapi perubahan yang sangat pesat Kami PT KAKA JAYA INDONUSA KONSTRUKSI , kami hadir untuk memebrikan layanyan yang terbaik pemikiran yang inspiratif, Kritis,  Kreatif dan Inovatif. menjadi formula dan bentuk layanan profesional”</i></p><br>
  
- <figure class="align-left"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>assets/dummy/single-image.jpg" alt="Single image"></figure>
- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem enim ad minima.</p>
+ <figure class="align-left"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>assets/dummy/single-image.jpg" width="100%" alt="Single image"></figure>
+ <p>Bersama kami PT KAKA JAYA INDONUSA KONTRUKSI mewujudkan  pembanguan Yang berkualitas.</p>
  
- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat  inventore veritatis.</p>
+ <p>PT KAKA JAYA INDONUSA KONSTRUKSI Merupakan perusahaan konsultan mandiri yang bediri sejak tahun 2020, dan berkembang hingga saat ini. </p>
+ <p>Perusahaan ini telah lebih dari 1 tahun berkarya dan berperan aktif dalam pembangunan di tanah air merupakan pencapaian yang tidak mudah. Banyak pengalaman dan proses pembelajaran yang telah dilewati dari tahun ke tahun yang membawa perusahaan terus tumbuh dan berkembang sesuai dengan rencana strategis perusahaan.</p>
+ <p>
+ PT KAKA JAYA INDONUSA KONSTRUKSI bergerak di bidang jasa konsultasi teknik dan manajemen yang menyediakan bantuan dan pelayanan terhadap klien dalam melaksanakan 
+ berbagai kegiatan yang berkaitan di bidang perencanaan umum, studi kelayakan, perencanaan 
+ teknik, pengawasan teknik Yang di dukung dengan tenaga- tenaga teknik ahli yang terkemuka 
+ dan berkualitas tinggi dalam melaksnakan tugasnya. 
+ </p>
  
- <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem enim ad minima quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint molestiae.</p>
+ <p>
+ Untuk meningkatkan Citra Perusahaan, Dalam pelaksanaannya PT KAKA JAYA INDONUSA KOSTRUSI  
+ selalu memberikan pelayanan yang bermutu tinggi untuk memberikan kepuasan terhadap 
+ pelannggan dengan menggunakan system teknik dan administrasi secara professional dengan 
+ di dukung oleh tenaga ahli yang berpengelaman di bidangnya dan dibantu oleh tenaga muda 
+ yang berbakat dan memiliki high potential and quality serta On Time di dalam setiap 
+ pelaksanaannya dengan tujuan agar terjaminnya sasaran kebutuhan klien secara maksimal dan 
+ membangun citra relasi yang baik antara perusahaan dan clien.dengan komitmen tersebut dan 
+ efisiensi kerja dalam sebuah tim yang bersatu.
+ </p>
+
+ <p>
+ Sebagai wujud dari rangkaian proses pembelajaran dan pengalaman perusahaan melalui 
+ manajemen teknologi dan metode konstruksi yang efektif – efisien, PT KAKA JAYA INDONUSA KONSTRUKSI
+ siap memberikan pelayanan jasa konstrksi terbaik dalam menciptakan karya konstruksi 
+ yang lebih nyata.
+ </p>
+
+ <p>
+ PT KAKA JAYA INDONUSA KONSTRUKSI akan terus mengusahakan yang terbaik untuk 
+ melayani semua client dengan menetapkan standar yang tinggi. Perusahaan memberikan 
+ komitmen penuh untuk menyediakan solusi yang terbaik untuk pelanggan dan tidak pernah 
+ berhenti dalam melakukan penyempurnaan unsur -unsur pendukungnya dengan pengembangan 
+ yang dilakukan dalam hal strategi teknik dan manajemen yang baik menjadikan PT KAKA JAYA INDONUSA KOSTRUKSI
+ lebih unggul.
+ </p>
+
+ <p>
+ PT.KAKA JAYA INDONUSA KONSTRUKSI  adalah perusahaan dengan pengalaman konstruksi yang kaya dan sistem operasi yang sangat matang bermutu di bidang teknik sipil, konstruksi, jembatan, jalan, teknik hidrolik, struktur baja, instalasi lokomotif dan infrastruktur lainnya serta konstruksi fasilitas industri. Sejak didirikan pada tahun 2020, perusahaan telah mendapatkan kepercayaan dari pelanggan dengan tim konstruksi profesional, kualitas proyek yang sangat baik dan jadwal yang dapat diandalkan. Saat ini
+ </p>
  
  <hr class="separator">
  
@@ -47,9 +83,9 @@
  </div>
  </div>
  
- <hr class="separator">
+ <?php /* <hr class="separator"> */ ?>
  
- <h2 class="section-title">testimonials</h2>
+ <?php /* <h2 class="section-title">testimonials</h2>
  <div class="row">
  <div class="col-md-4">
  <blockquote class="testimonial">
@@ -81,7 +117,7 @@
  <cite>Andrew Brow</cite>
  </blockquote>
  </div>
- </div>
+ </div> */ ?>
  </div>
 	</div>
 <?php $this->stopSection(); ?>
