@@ -31,13 +31,13 @@
                                         <td>{{ $d['nama'] }}</td>
                                         <td>{{ $d['url'] }}</td>
                                         <td>{{ $d['controller'] }}</td>
-                                        <td>{{ $d['function'] }}</td>
-                                        <td>{{ $d['method'] }}</td>
+                                        <td>{{ $d['functions'] }}</td>
+                                        <td>{{ $d['methods'] }}</td>
                                         <td>{{ $d['deskripsi'] }}</td>
                                         <td>{{ $d['visit'] }}</td>
                                         <td>{{ $d['created_at'] }}</td>
                                         <td>
-                                            <button onclick="update(`{{ $d['id'] }}|{{ $d['nama'] }}|{{ $d['url'] }}|{{ $d['controller'] }}|{{ $d['function'] }}|{{ $d['method'] }}|{{ $d['deskripsi'] }}|{{ $d['visit'] }}`)" class="btn btn-primary" data-toggle="modal" data-target="#modal"><i class="menu-icon ti-pencil"></i> Ubah</button>
+                                            <button onclick="update(`{{ $d['id'] }}|{{ $d['nama'] }}|{{ $d['url'] }}|{{ $d['controller'] }}|{{ $d['functions'] }}|{{ $d['methods'] }}|{{ $d['deskripsi'] }}|{{ $d['visit'] }}`)" class="btn btn-primary" data-toggle="modal" data-target="#modal"><i class="menu-icon ti-pencil"></i> Ubah</button>
                                             <button onclick="deletes({{ $d['id'] }})" class="btn btn-danger"><i class="menu-icon ti-trash"></i> Hapus</button>
                                         </td>
                                     </tr>
@@ -81,13 +81,13 @@
                             <div class="form-group">
                                 <div class="col-sm-11">
                                     <label for="function" class="control-label">Function</label>
-                                    <input type="text" class="form-control" id="function" name="function" placeholder="Function" required>
+                                    <input type="text" class="form-control" id="function" name="functions" placeholder="Function" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-11">
                                     <label for="method" class="control-label">Method</label>
-                                    <input type="text" class="form-control" id="method" name="method" placeholder="Method" required>
+                                    <input type="text" class="form-control" id="method" name="methods" placeholder="Method" required>
                                 </div>
                             </div>
                             <div class="form-group">

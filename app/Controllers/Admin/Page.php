@@ -30,6 +30,7 @@
 		public function create()
 		{
 			$data = parent::all();
+			$data['visit'] = 0;
 
 			$exe = Pages::create($data);
 

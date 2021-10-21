@@ -1,120 +1,87 @@
 @extends('main-page')
 @section('content')
-	<div class="fullwidth-block latest-projects-section">
+	<div class="page">
 		<div class="container">
-			<h2 class="section-title">Our latest projects</h2>
+			<h2 class="entry-title">Lorem ipsum dolor sit amet adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</h2>
+			
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure.</p>
+			
+			<figure class="align-left"><img src="{{ base_url }}assets/dummy/single-image.jpg" alt="Single image"></figure>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem enim ad minima.</p>
+			
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat  inventore veritatis.</p>
+			
+			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem enim ad minima quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint molestiae.</p>
+			
+			<hr class="separator">
+			
+			<h2 class="sectiont-title">What can we do for you?</h2>
 			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<div class="project">
-						<figure class="project-thumbnail"><img src="{{ base_url }}assets/dummy/thumb-1.jpg" alt="Project 1"></figure>
-						<h3 class="project-title"><a href="#">elit eiusmod tempor</a></h3>
-						<small class="project-subtitle">irure dolor voluptate</small>
-						<p>Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit fugit consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
-						<a href="#" class="more-link"><img src="{{ base_url }}assets/images/arrow.png" alt=""></a>
+				<div class="col-md-3">
+					<div class="feature-numbered">
+						<div class="num">1</div>
+						<h2 class="feature-title">accusamus iusto</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="project">
-						<figure class="project-thumbnail"><img src="{{ base_url }}assets/dummy/thumb-2.jpg" alt="Project 2"></figure>
-						<h3 class="project-title"><a href="#">elit eiusmod tempor</a></h3>
-						<small class="project-subtitle">irure dolor voluptate</small>
-						<p>Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit fugit consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
-						<a href="#" class="more-link"><img src="{{ base_url }}assets/images/arrow.png" alt=""></a>
+				<div class="col-md-3">
+					<div class="feature-numbered">
+						<div class="num">2</div>
+						<h2 class="feature-title">accusamus iusto</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="project">
-						<figure class="project-thumbnail"><img src="{{ base_url }}assets/dummy/thumb-3.jpg" alt="Project 3"></figure>
-						<h3 class="project-title"><a href="#">elit eiusmod tempor</a></h3>
-						<small class="project-subtitle">irure dolor voluptate</small>
-						<p>Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit fugit consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
-						<a href="#" class="more-link"><img src="{{ base_url }}assets/images/arrow.png" alt=""></a>
+				<div class="col-md-3">
+					<div class="feature-numbered">
+						<div class="num">3</div>
+						<h2 class="feature-title">accusamus iusto</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					<div class="project">
-						<figure class="project-thumbnail"><img src="{{ base_url }}assets/dummy/thumb-4.jpg" alt="Project 4"></figure>
-						<h3 class="project-title"><a href="#">elit eiusmod tempor</a></h3>
-						<small class="project-subtitle">irure dolor voluptate</small>
-						<p>Nemo enim ipsam voluptatem quia voluptas aspernatur aut odit fugit consequuntur magni dolores eos qui ratione voluptatem sequi.</p>
-						<a href="#" class="more-link"><img src="{{ base_url }}assets/images/arrow.png" alt=""></a>
+				<div class="col-md-3">
+					<div class="feature-numbered">
+						<div class="num">4</div>
+						<h2 class="feature-title">accusamus iusto</h2>
+						<p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
 					</div>
-				</div>
-			</div> <!-- .row -->
-		</div> <!-- .container -->
-	</div> <!-- .fullwidth-block.latest-projects-section -->
-
-	<div class="fullwidth-block image-block" data-bg-image="dummy/section-img.png"></div>
-
-	<div class="fullwidth-block">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					
-					<h3 class="section-title">About Us</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
-					<a href="#" class="button">Read more</a>
-					
-				</div>
-				<div class="col-md-4">
-					
-					<h3 class="section-title">High QUality</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
-					<a href="#" class="button">Read more</a>
-					
-				</div>
-				<div class="col-md-4">
-					
-					<h3 class="section-title">Safety Control</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
-					<a href="#" class="button">Read more</a>
-					
 				</div>
 			</div>
-
-			<hr class="separator">
-
-			<div class="row">
-				<div class="col-md-6">
-					<h2 class="section-title">Testimonials</h2>
-					<div class="testimonial-slider">
-						<ul class="slides">
-							<li>
-								<blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorum nostrum suscipit. Sunt tenetur accusantium eligendi illo perferendis. Commodi iste nihil eius, doloremque aperiam iure repellat sequi enim sint similique!</p>
-									<cite>Jessica Waton</cite>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>Ut ullam sed accusamus aliquam rerum tempora ab voluptatibus, nostrum vitae nesciunt quam atque! Tempora dolorem quas pariatur debitis nulla, molestiae, obcaecati voluptatibus quisquam, facilis quis sint eos, corporis assumenda.</p>
-									<cite>Jessica Waton</cite>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>Fuga provident modi illo dolorum, neque labore natus ratione, totam id sequi vero repudiandae velit nemo nobis corporis tenetur. Magnam velit est cumque incidunt unde delectus labore inventore eaque vitae?</p>
-									<cite>Jessica Waton</cite>
-								</blockquote>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h2 class="section-title">Latest News</h2>
-					<ul class="news">
-						<li>
-							<div class="date">30.09.2014</div>
-							<h3 class="entry-title"><a href="#">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim...</a></h3>
-						</li>
-						<li>
-							<div class="date">30.09.2014</div>
-							<h3 class="entry-title"><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur...</a></h3>
-						</li>
-					</ul>
-				</div>
-			</div> <!-- .row -->
 			
-		</div> <!-- .container -->
-	</div> <!-- .fullwidth-block -->
+			<hr class="separator">
+			
+			<h2 class="section-title">testimonials</h2>
+			<div class="row">
+				<div class="col-md-4">
+					<blockquote class="testimonial">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ratione odit incidunt tempora corporis quos, perspiciatis impedit, itaque distinctio cumque adipisci recusandae mollitia voluptatem. Veniam natus nam autem non illo!</p>
+						<cite>Jessica Watson</cite>
+					</blockquote>
+					<blockquote class="testimonial">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, officia, perspiciatis optio consectetur incidunt saepe hic voluptatem. Quaerat iste iusto quisquam saepe similique qui nesciunt at, dolor aperiam, doloremque libero.</p>
+						<cite>Andrew Brow</cite>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote class="testimonial">
+						<p>Ipsa, doloribus, et! Est, delectus, qui. Fugiat totam excepturi tenetur modi possimus veritatis, eius blanditiis numquam sint odit earum tempora pariatur. Sint corporis aperiam laudantium minus vel ipsam quaerat deserunt.</p>
+						<cite>Jessica Watson</cite>
+					</blockquote>
+					<blockquote class="testimonial">
+						<p>Provident voluptatem, ipsam officiis molestiae ipsum. Facere blanditiis quae nisi quibusdam dignissimos laudantium illum obcaecati excepturi ab fugiat beatae laborum, odio velit expedita distinctio animi ullam temporibus, architecto, accusantium labore.</p>
+						<cite>Andrew Brow</cite>
+					</blockquote>
+				</div>
+				<div class="col-md-4">
+					<blockquote class="testimonial">
+						<p>Id suscipit quia culpa fugiat porro dolore voluptates saepe, accusamus praesentium officiis nostrum at nemo ipsam atque eaque ex. Odit qui doloremque facere, explicabo fuga ipsum laudantium a, laboriosam temporibus.</p>
+						<cite>Jessica Watson</cite>
+					</blockquote>
+					<blockquote class="testimonial">
+						<p>Quia tempore dolorem incidunt minima provident enim saepe harum unde error placeat perspiciatis repellat distinctio magnam deleniti totam reiciendis deserunt nemo, quidem mollitia est itaque laudantium quod. Doloribus, voluptatem, fuga.</p>
+						<cite>Andrew Brow</cite>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</div>
 @endsection

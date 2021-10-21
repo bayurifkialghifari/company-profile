@@ -10,7 +10,7 @@
 	// Router
 	foreach($pages as $p)
 	{
-		$app->add($p['url'], $p['controller'], $p['function'], $p['method']);
+		$app->add($p['url'], $p['controller'], $p['functions'], $p['methods']);
 	}
 	
 	/**

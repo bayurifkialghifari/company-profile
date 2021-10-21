@@ -68,14 +68,12 @@
 				<div class="col-md-6">
 					<h2 class="section-title">Articels</h2>
 					<ul class="news">
-						<li>
-							<div class="date">30.09.2014</div>
-							<h3 class="entry-title"><a href="#">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim...</a></h3>
-						</li>
-						<li>
-							<div class="date">30.09.2014</div>
-							<h3 class="entry-title"><a href="#">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur...</a></h3>
-						</li>
+						@foreach($articels as $ar)
+							<li>
+								<div class="date">{{ date_format(date_create($ar['created_at']), 'Y-m-d') }}</div>
+								<h3 class="entry-title"><a href="{{ base_url }}articel/{{ $ar['judul'] }}|{{ $ar['id'] }}">{{ $ar['judul'] }}</a></h3>
+							</li>
+						@endforeach
 					</ul>
 				</div>
 			</div> <!-- .row -->

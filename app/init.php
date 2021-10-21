@@ -1,14 +1,15 @@
 <?php
 	
 	// HEADER GGWP
+	ini_set('display_errors', 0);
 	header('Access-Control-Allow-Origin: *');
 	
 	// SESSION GGWP
 	session_start();
 
 	const APP_PATH 		= __DIR__;
-	const VIEW_PATH 	= APP_PATH . '\Views\\';
-	const CACHE_PATH 	= APP_PATH . '\Cache\\';
+	const VIEW_PATH 	= APP_PATH . '/Views';
+	const CACHE_PATH 	= APP_PATH . '/Cache';
 	
 	// AUTOLOAD GGWP
 	require_once '../vendor/autoload.php';

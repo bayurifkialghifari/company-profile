@@ -112,7 +112,7 @@
 
             $exe            = self::connect()->query("INSERT INTO ". self::getTableName() ." ({$field}) VALUES ({$row})");
 
-            return $exe;
+            return "INSERT INTO ". self::getTableName() ." ({$field}) VALUES ({$row})";
         }
 
         /** 

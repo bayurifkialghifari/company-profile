@@ -1,0 +1,87 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('content'); ?>
+	<div class="fullwidth-block latest-projects-section">
+ <div class="container">
+ <h2 class="section-title">Our latest projects</h2>
+ <div class="row">
+ <?php $__currentLoopData = $portofolios; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $p): $loop = $this->incrementLoopIndices();  ?>
+ <div class="col-sm-6 col-md-3">
+ <div class="project">
+ <figure class="project-thumbnail"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>portofolios/<?php echo \htmlentities($p['foto'], ENT_QUOTES, 'UTF-8', false); ?>" alt="<?php echo \htmlentities($p['judul'], ENT_QUOTES, 'UTF-8', false); ?>"></figure>
+ <h3 class="project-title"><a href="#"><?php echo \htmlentities($p['judul'], ENT_QUOTES, 'UTF-8', false); ?></a></h3>
+ <small class="project-subtitle"><?php echo \htmlentities($p['sub_judul'], ENT_QUOTES, 'UTF-8', false); ?></small>
+ <p><?php echo \htmlentities($p['deskripsi'], ENT_QUOTES, 'UTF-8', false); ?></p>
+ <a href="#" class="more-link"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>assets/images/arrow.png" alt=""></a>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div> <!-- .row -->
+ </div> <!-- .container -->
+	</div> <!-- .fullwidth-block.latest-projects-section -->
+
+	<div class="fullwidth-block image-block" data-bg-image="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>assets/dummy/section-img.png"></div>
+
+	<div class="fullwidth-block">
+ <div class="container">
+ <div class="row">
+ <div class="col-md-4">
+ 
+ <h3 class="section-title">About Us</h3>
+ <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
+ <a href="#" class="button">Read more</a>
+ 
+ </div>
+ <div class="col-md-4">
+ 
+ <h3 class="section-title">High QUality</h3>
+ <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
+ <a href="#" class="button">Read more</a>
+ 
+ </div>
+ <div class="col-md-4">
+ 
+ <h3 class="section-title">Safety Control</h3>
+ <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
+ <a href="#" class="button">Read more</a>
+ 
+ </div>
+ </div>
+
+ <hr class="separator">
+
+ <div class="row">
+ <div class="col-md-6">
+ <h2 class="section-title">Testimonials</h2>
+ <div class="testimonial-slider">
+ <ul class="slides">
+ <?php $__currentLoopData = $testimonials; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $t): $loop = $this->incrementLoopIndices();  ?>
+ <li>
+ <blockquote>
+ <p><?php echo \htmlentities($t['deskripsi'], ENT_QUOTES, 'UTF-8', false); ?></p>
+ <cite><?php echo \htmlentities($t['penulis'], ENT_QUOTES, 'UTF-8', false); ?></cite>
+ </blockquote>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ </div>
+ </div>
+ <div class="col-md-6">
+ <h2 class="section-title">Articels</h2>
+ <ul class="news">
+ <?php $__currentLoopData = $articels; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $ar): $loop = $this->incrementLoopIndices();  ?>
+ <li>
+ <div class="date"><?php echo \htmlentities(date_format(date_create($ar['created_at']), 'Y-m-d'), ENT_QUOTES, 'UTF-8', false); ?></div>
+ <h3 class="entry-title"><a href="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>articel/<?php echo \htmlentities($ar['judul'], ENT_QUOTES, 'UTF-8', false); ?>|<?php echo \htmlentities($ar['id'], ENT_QUOTES, 'UTF-8', false); ?>"><?php echo \htmlentities($ar['judul'], ENT_QUOTES, 'UTF-8', false); ?></a></h3>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ </div>
+ </div> <!-- .row -->
+ 
+ </div> <!-- .container -->
+	</div> <!-- .fullwidth-block -->
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('main-page'); } ?>

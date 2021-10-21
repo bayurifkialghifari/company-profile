@@ -39,6 +39,11 @@
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="{{ base_url }}assets/style.css">
+
+
+		<script src="{{ base_url }}assets/js/jquery-1.11.1.min.js"></script>
+		<script src="{{ base_url }}assets/js/plugins.js"></script>
+		<script src="{{ base_url }}assets/js/app.js"></script>
 		
 		<!--[if lt IE 9]>
 		<script src="{{ base_url }}assets/js/ie-support/html5.js"></script>
@@ -115,11 +120,6 @@
 				@include('partials._footer')
 			</footer> <!-- .site-footer -->
 		</div>
-
-		<script src="{{ base_url }}assets/js/jquery-1.11.1.min.js"></script>
-		<script src="{{ base_url }}assets/js/plugins.js"></script>
-		<script src="{{ base_url }}assets/js/app.js"></script>
-		
 	</body>
 
 </html>
