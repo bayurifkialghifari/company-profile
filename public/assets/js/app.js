@@ -10,9 +10,9 @@
 			$(".mobile-navigation").slideToggle();
 		});
 
-		// hero-slider
 		$(".hero-slider").flexslider({
-			controlNav: false,
+			// hero-slider
+			// controlNav: false,
 			directionNav: true,
 			animation: "fade",
 			prevText:'<i class="fa fa-angle-left"></i>',

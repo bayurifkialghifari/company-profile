@@ -95,18 +95,24 @@
 			<div class="hero hero-slider">
 				<ul class="slides">
 					@foreach($banner as $banner)
-						<li data-bg-image="{{ base_url }}banners/{{ $banner['foto'] }}">
-							<div class="container">
-								<div class="slide-title">
-									@if($banner['nama'] != '' || $banner['nama'] != '-')
-										<span>{{ $banner['nama'] }}</span> <br>
-									@endif
-									@if($banner['deskripsi'] != '' || $banner['deskripsi'] != '-')
-										<span>{{ $banner['deskripsi'] }}</span>
-									@endif
-								</div>
+					<li>
+						<br>
+						<img width="100%" height="600px" style="background-size: cover" src="{{ base_url }}banners/{{ $banner['foto'] }}" />
+						<div class="container" style="margin-top: -600px">
+							<div class="slide-title">
+								@if($banner['nama'] != '' || $banner['nama'] != '-')
+									<span>{{ $banner['nama'] }}</span> <br>
+								@endif
+								@if($banner['deskripsi'] != '' || $banner['deskripsi'] != '-')
+									<span>{{ $banner['deskripsi'] }}</span>
+								@endif
 							</div>
-						</li>
+						</div>
+					</li>
+						{{-- <li data-bg-image="{{ base_url }}banners/{{ $banner['foto'] }}">
+							
+							</div>
+						</li> --}}
 					@endforeach
 				</ul> <!-- .slides -->
 			</div> <!-- .hero-slider -->
