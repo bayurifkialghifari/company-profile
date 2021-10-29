@@ -109,10 +109,6 @@
 							</div>
 						</div>
 					</li>
-						{{-- <li data-bg-image="{{ base_url }}banners/{{ $banner['foto'] }}">
-							
-							</div>
-						</li> --}}
 					@endforeach
 				</ul> <!-- .slides -->
 			</div> <!-- .hero-slider -->
@@ -127,5 +123,11 @@
 			</footer> <!-- .site-footer -->
 		</div>
 	</body>
+	<script>
+		$(() =>
+		{
+			$('.flex-control-paging').css('display', 'none')
+		})
+	</script>
 
 </html>

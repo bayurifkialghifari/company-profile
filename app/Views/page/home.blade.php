@@ -1,3 +1,21 @@
+@php
+    
+    use App\Models\Websites;
+
+    $websites = Websites::all();
+    $webs = [];
+
+    foreach($websites as $r)
+    {
+    	$webs[$r['name']] = $r['content']; 
+
+    	if($r['name'] == 'website_logo')
+    	{
+    		$logo_desc = $r['deskripsi'];
+    	}
+    }
+@endphp
+
 @extends('main-page')
 @section('content')
 	<div class="fullwidth-block latest-projects-section">
@@ -24,25 +42,23 @@
 	<div class="fullwidth-block">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-12">
 					
 					<h3 class="section-title">About Us</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
-					<a href="#" class="button">Read more</a>
-					
-				</div>
-				<div class="col-md-4">
-					
-					<h3 class="section-title">High QUality</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
-					<a href="#" class="button">Read more</a>
-					
-				</div>
-				<div class="col-md-4">
-					
-					<h3 class="section-title">Safety Control</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaque ipsa quae illo inventore veritatis quasi architecto beatae vitae dicta explicabo nemo ipsam voluptatem quia voluptas aspernatur.</p>
-					<a href="#" class="button">Read more</a>
+					<p>
+						{{ $webs['company_name'] }} adalah perusahaan konsultan mandiri yang
+						bediri sejak tahun 2020 & berkembang hingga
+						saat ini. Perusahaan ini telah lebih dari 1 tahun
+						berkarya dan sangat berperan aktif dalam
+						pembangunan di tanah air.
+					</p>
+
+					<p>
+						<i><b>" SOLUSI TERBAIK UNTUK KONSTRUKSI,
+							PERAWATAN GEDUNG, MEKANIKAL
+							ELEKTEIKAL "</b></i>
+					</p>
+					<a href="{{ base_url }}about-us" class="button">Read more</a>
 					
 				</div>
 			</div>
