@@ -60,6 +60,8 @@
 		$app->add('/admin/metas/create', '\Admin\Meta', 'create', 'post');
 		$app->add('/admin/metas/update', '\Admin\Meta', 'update', 'put');
 		$app->add('/admin/metas/delete', '\Admin\Meta', 'destroy', 'delete');
+
+		$app->add('/articel/:param', '\Article', 'detail');
 	/**
 	* # Admin
 	**/

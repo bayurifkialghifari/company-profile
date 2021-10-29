@@ -20,7 +20,7 @@
 <?php $this->startSection('content'); ?>
 	<div class="fullwidth-block latest-projects-section">
  <div class="container">
- <h2 class="section-title">Our latest projects</h2>
+ <h2 class="section-title">Portofolio</h2>
  <div class="row">
  <?php $__currentLoopData = $portofolios; $this->addLoop($__currentLoopData);$this->getFirstLoop();
  foreach($__currentLoopData as $p): $loop = $this->incrementLoopIndices();  ?>

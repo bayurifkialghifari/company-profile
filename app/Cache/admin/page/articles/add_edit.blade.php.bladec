@@ -16,7 +16,7 @@
  <div class="form-group">
  <div class="col-sm-11">
  <label for="judul" class="control-label">Foto</label>
- <input type="file" class="form-control" id="foto" placeholder="Foto" required>
+ <input type="file" class="form-control" id="foto" placeholder="Foto">
  <label for="tanggal">Preview Image</label>
  <br>
  <img src="" id="image-preview" width="50%">                                 

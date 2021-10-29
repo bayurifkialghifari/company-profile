@@ -20,7 +20,7 @@
 @section('content')
 	<div class="fullwidth-block latest-projects-section">
 		<div class="container">
-			<h2 class="section-title">Our latest projects</h2>
+			<h2 class="section-title">Portofolio</h2>
 			<div class="row">
 				@foreach($portofolios as $p)
 				<div class="col-sm-6 col-md-4">

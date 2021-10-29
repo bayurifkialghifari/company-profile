@@ -35,7 +35,7 @@
                 <div class="col-md-3 col-md-offset-1">
                     <div class="contact-form">
                         <h2 class="section-title">Write us</h2>
-                        <p>Dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam dolorem.</p>
+                        {{-- <p>Dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam dolorem.</p> --}}
 
                         <form action="#">
                             <input type="text" placeholder="Your name..">

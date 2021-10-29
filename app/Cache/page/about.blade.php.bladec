@@ -13,7 +13,8 @@
  <figure class="align-left"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>struktur-organisasi.png" width="100%" alt="Stuktur Organisasi"></figure>
 
  <figure class="align-left"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>linkup-kerja.png" width="100%" alt="Lingkup Kerja"></figure>
-
+ 
+ <figure class="align-left"><img src="<?php echo \htmlentities(base_url, ENT_QUOTES, 'UTF-8', false); ?>partner.png" width="100%" alt="Partner"></figure>
  <?php /* <p>Bersama kami PT KAKA JAYA INDONUSA KONTRUKSI mewujudkan  pembanguan Yang berkualitas.</p>
  <p>PT KAKA JAYA INDONUSA KONSTRUKSI Merupakan perusahaan konsultan mandiri yang bediri sejak tahun 2020, dan berkembang hingga saat ini. </p>
  <p>Perusahaan ini telah lebih dari 1 tahun berkarya dan berperan aktif dalam pembangunan di tanah air merupakan pencapaian yang tidak mudah. Banyak pengalaman dan proses pembelajaran yang telah dilewati dari tahun ke tahun yang membawa perusahaan terus tumbuh dan berkembang sesuai dengan rencana strategis perusahaan.</p>
@@ -50,8 +51,6 @@
  <p>
  PT.KAKA JAYA INDONUSA KONSTRUKSI  adalah perusahaan dengan pengalaman konstruksi yang kaya dan sistem operasi yang sangat matang bermutu di bidang teknik sipil, konstruksi, jembatan, jalan, teknik hidrolik, struktur baja, instalasi lokomotif dan infrastruktur lainnya serta konstruksi fasilitas industri. Sejak didirikan pada tahun 2020, perusahaan telah mendapatkan kepercayaan dari pelanggan dengan tim konstruksi profesional, kualitas proyek yang sangat baik dan jadwal yang dapat diandalkan. Saat ini
  </p> */ ?>
- 
- <hr class="separator">
  
  <?php /* <h2 class="sectiont-title">What can we do for you?</h2>
  <div class="row">

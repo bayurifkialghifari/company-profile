@@ -14,9 +14,9 @@
 			->get();
 
 			view('page/portofolio', [
-				'title' => 'About us',
+				'title' => 'Portofolio',
 				'class' => explode('\\', get_called_class())[2],
-				'portofolios' => $portofolios,
+				'portofolios' => $portofolios->fetch_assoc(),
 			]);
 		}
 	}

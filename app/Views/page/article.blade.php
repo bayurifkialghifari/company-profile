@@ -9,11 +9,11 @@
                 @foreach($articels as $a)
                     <div class="project-item filterable-item">
                         <figure class="featured-image">
-                            <a href=""><img src="{{ base_url }}banners/{{ $a['foto'] }}" alt="{{ $a['judul'] }}"></a>
+                            <a href="{{ base_url }}articel/{{ $a['judul'] }}|{{ $a['id'] }}"><img src="{{ base_url }}banners/{{ $a['foto'] }}" alt="{{ $a['judul'] }}"></a>
                             <figcaption>
-                                <h2 class="project-title"><a href="#">{{ $a['judul'] }}</a></h2>
+                                <h2 class="project-title"><a href="{{ base_url }}articel/{{ $a['judul'] }}|{{ $a['id'] }}">{{ $a['judul'] }}</a></h2>
                                 <p class="project-subtotle">{{ $a['sub_judul'] }}</p>
-                                <a href="#" class="more-link"><img src="{{ base_url }}assets/images/arrow.png" alt=""></a>
+                                <a href="{{ base_url }}articel/{{ $a['judul'] }}|{{ $a['id'] }}" class="more-link"><img src="{{ base_url }}assets/images/arrow.png" alt=""></a>
                             </figcaption>
                         </figure>
                     </div>
