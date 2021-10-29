@@ -22,8 +22,8 @@
 			<strong>{{ $webs['company_name'] }}</strong>
 			<p>{{ $webs['company_address'] }}</p>
 		</address>
-
-		<a href="#" class="phone">{{ $webs['company_phone'] }}</a>
+		<br>
+		<a class="phone">{{ $webs['company_phone'] }}</a>
 	</div> <!-- .pull-left -->
 	<div class="pull-right">
 

@@ -23,9 +23,9 @@
 			<h2 class="section-title">Our latest projects</h2>
 			<div class="row">
 				@foreach($portofolios as $p)
-				<div class="col-sm-6 col-md-3">
+				<div class="col-sm-6 col-md-4">
 					<div class="project">
-						<figure class="project-thumbnail"><img src="{{ base_url }}portofolios/{{ $p['foto'] }}" alt="{{ $p['judul'] }}"></figure>
+						<figure class="project-thumbnail"><img src="{{ base_url }}portofolios/{{ $p['foto'] }}" alt="{{ $p['judul'] }}" width="100%" height="200px"></figure>
 						<h3 class="project-title"><a href="#">{{ $p['judul'] }}</a></h3>
 						<small class="project-subtitle">{{ $p['sub_judul'] }}</small>
 						<p>{{ $p['deskripsi'] }}</p>
@@ -37,7 +37,8 @@
 		</div> <!-- .container -->
 	</div> <!-- .fullwidth-block.latest-projects-section -->
 
-	<div class="fullwidth-block image-block" data-bg-image="{{ base_url }}assets/dummy/section-img.png"></div>
+	<div class="fullwidth-block image-block" style="background: linear-gradient(to left, rgba(78, 38, 38, 0.656) 50%,
+	rgb(47, 31, 23)), url('{{ base_url }}assets/dummy/section.png')"></div>
 
 	<div class="fullwidth-block">
 		<div class="container">

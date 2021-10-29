@@ -6,9 +6,15 @@
 			
 			<p><i>“Menghadapi perubahan yang sangat pesat Kami PT KAKA JAYA INDONUSA KONSTRUKSI , kami hadir untuk memebrikan layanyan yang terbaik pemikiran yang inspiratif, Kritis,  Kreatif dan Inovatif. menjadi formula dan bentuk layanan profesional”</i></p><br>
 			
-			<figure class="align-left"><img src="{{ base_url }}assets/dummy/single-image.jpg" width="100%" alt="Single image"></figure>
-			<p>Bersama kami PT KAKA JAYA INDONUSA KONTRUKSI mewujudkan  pembanguan Yang berkualitas.</p>
+			<figure class="align-left"><img src="{{ base_url }}visi-misi.png" width="100%" alt="Visi Misi"></figure>
 			
+			<h2 class="entry-title">Struktur Organisasi</h2>
+
+			<figure class="align-left"><img src="{{ base_url }}struktur-organisasi.png" width="100%" alt="Stuktur Organisasi"></figure>
+
+			<figure class="align-left"><img src="{{ base_url }}linkup-kerja.png" width="100%" alt="Lingkup Kerja"></figure>
+
+			{{-- <p>Bersama kami PT KAKA JAYA INDONUSA KONTRUKSI mewujudkan  pembanguan Yang berkualitas.</p>
 			<p>PT KAKA JAYA INDONUSA KONSTRUKSI Merupakan perusahaan konsultan mandiri yang bediri sejak tahun 2020, dan berkembang hingga saat ini. </p>
 			<p>Perusahaan ini telah lebih dari 1 tahun berkarya dan berperan aktif dalam pembangunan di tanah air merupakan pencapaian yang tidak mudah. Banyak pengalaman dan proses pembelajaran yang telah dilewati dari tahun ke tahun yang membawa perusahaan terus tumbuh dan berkembang sesuai dengan rencana strategis perusahaan.</p>
 			<p>
@@ -17,7 +23,6 @@
 				teknik, pengawasan teknik Yang di dukung dengan tenaga- tenaga teknik ahli yang terkemuka 
 				dan berkualitas tinggi dalam melaksnakan tugasnya. 
 			</p>
-			
 			<p>
 				Untuk meningkatkan Citra Perusahaan, Dalam pelaksanaannya PT KAKA JAYA INDONUSA KOSTRUSI  
 				selalu memberikan pelayanan yang bermutu tinggi untuk memberikan kepuasan terhadap 
@@ -28,14 +33,12 @@
 				membangun citra relasi yang baik antara perusahaan dan clien.dengan komitmen tersebut dan 
 				efisiensi kerja dalam sebuah tim yang bersatu.
 			</p>
-
 			<p>
 				Sebagai wujud dari rangkaian proses pembelajaran dan pengalaman perusahaan melalui 
 				manajemen teknologi dan metode konstruksi yang efektif – efisien, PT KAKA JAYA INDONUSA KONSTRUKSI
 				siap memberikan pelayanan jasa konstrksi terbaik dalam menciptakan karya konstruksi 
 				yang lebih nyata.
 			</p>
-
 			<p>
 				PT KAKA JAYA INDONUSA KONSTRUKSI akan terus mengusahakan yang terbaik untuk 
 				melayani semua client dengan menetapkan standar yang tinggi. Perusahaan memberikan 
@@ -44,14 +47,13 @@
 				yang dilakukan dalam hal strategi teknik dan manajemen yang baik menjadikan PT KAKA JAYA INDONUSA KOSTRUKSI
 				lebih unggul.
 			</p>
-
 			<p>
 				PT.KAKA JAYA INDONUSA KONSTRUKSI  adalah perusahaan dengan pengalaman konstruksi yang kaya dan sistem operasi yang sangat matang bermutu di bidang teknik sipil, konstruksi, jembatan, jalan, teknik hidrolik, struktur baja, instalasi lokomotif dan infrastruktur lainnya serta konstruksi fasilitas industri. Sejak didirikan pada tahun 2020, perusahaan telah mendapatkan kepercayaan dari pelanggan dengan tim konstruksi profesional, kualitas proyek yang sangat baik dan jadwal yang dapat diandalkan. Saat ini
-			</p>
+			</p> --}}
 			
 			<hr class="separator">
 			
-			<h2 class="sectiont-title">What can we do for you?</h2>
+			{{-- <h2 class="sectiont-title">What can we do for you?</h2>
 			<div class="row">
 				<div class="col-md-3">
 					<div class="feature-numbered">
@@ -81,7 +83,7 @@
 						<p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 			
 			{{-- <hr class="separator"> --}}
 			
