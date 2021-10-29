@@ -16,7 +16,7 @@
 			view('page/portofolio', [
 				'title' => 'Portofolio',
 				'class' => explode('\\', get_called_class())[2],
-				'portofolios' => $portofolios->fetch_assoc(),
+				'portofolios' => $portofolios,
 			]);
 		}
 	}
