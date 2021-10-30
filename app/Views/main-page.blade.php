@@ -34,7 +34,7 @@
 		<title>{{ $webs['website_name'] }} | {{ isset($title) ? $title : '' }}</title>
 
 		<!-- Loading third party fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|" rel="stylesheet" type="text/css">
 		<link href="{{ base_url }}assets/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
